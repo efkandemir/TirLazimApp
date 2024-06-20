@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".addjobemployer">
+
+    <EditText
+        android:id="@+id/bitistarihi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="54dp"
+        android:ems="10"
+        android:hint="Last Date"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/isipaylas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslangictarihi" />
+
+    <EditText
+        android:id="@+id/baslangictarihi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Starting Date"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bitistarihi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isfiyati" />
+
+    <EditText
+        android:id="@+id/sonkonumu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Last Location"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/isfiyati"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslangickonumu" />
+
+    <EditText
+        android:id="@+id/baslangickonumu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Starting Location"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sonkonumu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urunturu" />
+
+    <EditText
+        android:id="@+id/isfiyati"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="22dp"
+        android:drawableEnd="@drawable/money"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/baslangictarihi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonkonumu" />
+
+    <EditText
+        android:id="@+id/urunturu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Product Transported"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/baslangickonumu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/isipaylas"
+        android:layout_width="186dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="114dp"
+        android:onClick="isi"
+        android:text="Share Job"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bitistarihi" />
+</androidx.constraintlayout.widget.ConstraintLayout>

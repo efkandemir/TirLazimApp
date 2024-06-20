@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".employeekayitol_sayfasi">
+
+    <EditText
+        android:id="@+id/kayitnicknameemployee"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/person"
+        android:hint=" Nickname"
+        android:textSize="19dp"
+        android:inputType="text"
+        android:drawablePadding="3dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayitageemployee"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/kayitageemployee"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/number"
+        android:hint=" Age"
+        android:textSize="19dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textStyle="italic"
+        android:drawablePadding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayitdrivinglicenseemployee"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/employeeSignupbutton"
+        android:layout_width="143dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonarkaplan"
+        android:onClick="employeeSignupbutton"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/kayitdrivinglicenseemployee"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="19dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/car"
+        android:hint=" Driving License Class"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textStyle="italic"
+        android:drawablePadding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayitnamesurnameemployee"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="392dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayitnicknameemployee"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/myColor"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/kayitpasswordemployee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittextarkaplan"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="3dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:textSize="19dp"
+            android:textStyle="italic"
+            tools:ignore="MissingConstraints" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/kayitwomencheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:text="Woman"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/kayitmalecheckBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayitageemployee"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/kayitmalecheckBox"
+        android:layout_width="80dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:text="Male"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/kayitwomencheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/kayitageemployee"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/kayitnamesurnameemployee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/tag"
+        android:ems="10"
+        android:inputType="text"
+        android:drawablePadding="3dp"
+        android:padding="10dp"
+        android:hint="Name Surname"
+        android:textColorHint="@color/black"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

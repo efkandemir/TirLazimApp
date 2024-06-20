@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/myColor"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Sol taraf -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kullanıcı Adı"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/tvnamesurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="namesurname"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <!-- Sağ taraf -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvgender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/tvage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="age"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/tvdrivinglicense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ehliyet"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

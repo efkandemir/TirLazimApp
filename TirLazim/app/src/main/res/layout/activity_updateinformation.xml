@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".updateinformation">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/nameedit"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/myColor"
+        android:clickable="true"
+        android:onClick="a"
+        app:borderWidth="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/namesurnametext"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_edit_24"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/nicknameedit"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/myColor"
+        android:clickable="true"
+        android:onClick="a"
+        app:borderWidth="3dp"
+        app:layout_constraintStart_toEndOf="@+id/nicknametext"
+        app:layout_constraintTop_toBottomOf="@+id/genderedit"
+        app:srcCompat="@drawable/baseline_edit_24"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/genderedit"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/myColor"
+        android:clickable="true"
+        android:onClick="a"
+        app:borderWidth="3dp"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/ageedit"
+        app:srcCompat="@drawable/baseline_edit_24"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/passwordedit"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/myColor"
+        android:clickable="true"
+        android:onClick="a"
+        app:borderWidth="3dp"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/nicknameedit"
+        app:srcCompat="@drawable/baseline_edit_24"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/drivingedit"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/myColor"
+        android:clickable="true"
+        android:onClick="a"
+        app:borderWidth="3dp"
+        app:layout_constraintStart_toEndOf="@+id/drivinglicensetext"
+        app:layout_constraintTop_toBottomOf="@+id/nameedit"
+        app:srcCompat="@drawable/baseline_edit_24"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ageedit"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/myColor"
+        android:clickable="true"
+        android:onClick="a"
+        app:borderWidth="3dp"
+        app:layout_constraintStart_toEndOf="@+id/agetext"
+        app:layout_constraintTop_toBottomOf="@+id/drivingedit"
+        app:srcCompat="@drawable/baseline_edit_24"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/namesurnametext"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/white_btnbackground"
+        android:drawableLeft="@drawable/tag"
+        android:drawablePadding="4dp"
+        android:enabled="false"
+        android:hint="Name Surname"
+        android:onClick="nameclick"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/nameedit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/drivinglicensetext"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/white_btnbackground"
+        android:drawableLeft="@drawable/car"
+        android:drawablePadding="4dp"
+        android:enabled="false"
+        android:hint="Driving License Class"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/drivingedit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namesurnametext"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/agetext"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/white_btnbackground"
+        android:drawableLeft="@drawable/number"
+        android:drawablePadding="4dp"
+        android:enabled="false"
+        android:hint="Age"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/ageedit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drivinglicensetext"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="291dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toStartOf="@+id/passwordedit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nicknametext"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/myColor"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordtext"
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/white_btnbackground"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="4dp"
+            android:enabled="false"
+            android:hint="Password"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toStartOf="@+id/passwordedit"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nicknametext"
+            tools:ignore="MissingConstraints">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/nicknametext"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/white_btnbackground"
+        android:drawableLeft="@drawable/person"
+        android:enabled="false"
+        android:hint="Nickname"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/nicknameedit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/white_btnbackground"
+        android:enabled="false"
+        app:layout_constraintEnd_toStartOf="@+id/genderedit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agetext"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
